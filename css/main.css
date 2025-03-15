@@ -1,0 +1,154 @@
+/* 
+italic bold
+font size
+font style */
+
+* {
+    transition-duration: .5s;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    box-shadow: inset 0 0 60px #0000004a;
+    padding: 2rem;
+}
+
+#text {
+    resize: none;
+    height: 75vh;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#filename {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header .logo {
+    height: 3.5rem;
+    width: 4rem;
+    opacity: .8;
+}
+
+.header .name {
+    position: absolute;
+    margin-top: .5vw;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#download,
+.header button {
+    border-radius: 50px;
+    font-style: italic;
+    padding: .5rem 3.5rem .5rem 3.5rem;
+    border: none;
+    letter-spacing: .1vw;
+    color: #000000b4;
+    font-weight: 800;
+    background-color: #a3a3a3a3;
+    transition-duration: .25s;
+}
+
+#download {
+    background-color: rgba(0, 162, 255, 0.297);
+    color: #000;
+}
+
+#download:hover,
+.header button:hover {
+    color: #000;
+    background-color: rgba(0, 162, 255, 0.527);
+}
+
+.setting #namee {
+    position: absolute;
+    right: 6rem;
+    font-weight: 800;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.setting ul {
+    position: absolute;
+    list-style-type: none;
+    top: 1.2rem;
+    right: 9vw;
+    display: none;
+}
+
+.setting li {
+    display: inline-block;
+    margin: 1rem 1.2rem 1rem 0;
+    text-decoration: none;
+    border-radius: 20px;
+    font-style: italic;
+    color: #000;
+    background-color: #a3a3a376;
+    padding: .2vw 1.5vw .2vw 1.5vw;
+}
+
+.setting li:hover {
+    background-color: rgba(0, 162, 255, 0.333);
+}
+
+.fa-gear {
+    float: right;
+    cursor: grab;
+}
+
+.fa-gear:hover {
+    transform: rotate(-25deg);
+}
+
+#li_1,
+#li_2,
+#li_3 {
+    display: none;
+    top: 1rem;
+    transition: 2s;
+}
+
+#li_1 {
+    right: 8rem;
+}
+
+#li_2 {
+    right: 7rem;
+}
+
+#li_3 {
+    right: 5rem;
+}
+
+#li_1 li,
+#li_2 li,
+#li_3 li {
+    margin-left: -5%;
+}
+
+.font:hover #li_1,
+.font_style:hover #li_2,
+.font_weight:hover #li_3 {
+    display: block;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(128, 128, 128, 0.165);
+    top: 3rem;
+}

@@ -1,0 +1,38 @@
+@media screen and (min-width:100px)and (max-width:720px) {
+    .header .name {
+        margin-top: 4rem;
+        margin-left: -6.5rem;
+        font-size: 1.4rem;
+    }
+    .setting ul {
+        right: 19vw;
+        backdrop-filter: blur(3px);
+        background-color: rgba(128, 128, 128, 0.29);
+        left: 0%;
+        margin-top: 17vw;
+        margin-left: 20%;
+        border-radius: 20px;
+    }
+    .setting .font,
+    .setting .font_style,
+    .setting .font_weight {
+        background-color: #ffffff76;
+    }
+    .setting li:hover {
+        background-color: #ffffff76;
+    }
+    .setting li {
+        display: grid;
+    }
+    .font:hover #li_1,
+    .font_style:hover #li_2,
+    .font_weight:hover #li_3 {
+        display: contents;
+    }
+    #li_1 li,
+    #li_2 li,
+    #li_3 li {
+        border: 1px solid #000;
+        margin-left: 5%;
+    }
+}

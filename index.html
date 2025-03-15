@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/v5-font-face.min.css" integrity="sha512-5V4m5oBRPLC2aZloM2/C/Simvm/jRfHXcqxTC6iW3FS93jfEWEFmJ7dWqAHME6CGlAG4StQ3f7kN41EUjEFJUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="container-fluid header ">
+
+        <div class="row mb-3 ">
+            <div class="col-3 col-sm-2 col-md-1">
+                <img class="logo" src="./images/logo.png" alt="">
+            </div>
+
+
+
+            <div class="col text-center">
+                <p class="name float-start ">NotePad</p>
+            </div>
+
+            <div id="setting" class="col-1 setting">
+
+
+                <ul id="list" class="list text-center">
+
+                    <li class="font">Font
+                        <ul id="li_1">
+                            <li onclick="my_fonts('Architects')" style="font-family: 'Architects Daughter', cursive;">Architects</li>
+                            <li onclick="my_fonts('Playball')" style="font-family: 'Playball', cursive;">Playball</li>
+                            <li onclick="my_fonts('Syne_Mono')" style="font-family: 'Syne Mono', monospace;">Syne Mono</li>
+                        </ul>
+                    </li>
+
+                    <li class="font_style">Font Style
+                        <ul id="li_2">
+                            <li onclick="my_fonts_style('normal')">normal</li>
+                            <li onclick="my_fonts_style('italic')">italic</li>
+                        </ul>
+
+                    </li>
+
+                    <li class="font_weight">font weight
+                        <ul id="li_3">
+                            <li onclick="my_fonts_weight('light')">Light</li>
+                            <li onclick="my_fonts_weight('bold')">Bold</li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <span id="namee">Settings</span> <i id="gear" class="fa-2x fa-solid fa-gear" onclick="settings()"></i>
+
+
+                <button class="float-end mt-4 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-1">
+
+
+
+        <div class="row">
+            <textarea placeholder="Type your text here..." id="text"></textarea>
+        </div>
+
+
+    </div>
+
+
+    <!-- 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
+
+    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="btn-close shadow-none " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <input id="filename" class="shadow-none " placeholder="Enter File Name..." />
+                </div>
+                <div class="modal-footer">
+                    <button id="download">Download file</button>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 
+    <p style="margin-top: 1000px;"></p>
+
+
+
+    <div id="container">
+        <h1>Save the text to a file</h1>
+        <textarea placeholder="Type your text here..." id="text"></textarea>
+       
+    </div> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js " integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js " integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
